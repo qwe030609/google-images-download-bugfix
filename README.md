@@ -10,7 +10,6 @@ This repo forked from:
 ## Documentation
 =============
 
-* [Breakdance](https://breakdance.github.io/breakdance/) - HTML
 * [Documentation Homepage]( <https://google-images-download.readthedocs.io/en/latest/index.html>)
 * [Installation](<https://google-images-download.readthedocs.io/en/latest/installation.html>)
 * [Input arguments](<https://google-images-download.readthedocs.io/en/latest/arguments.html>)
