@@ -1,19 +1,24 @@
-Google Images Download
-######################
+# Google Images Download
+==============
 
 Python Script for 'searching' and 'downloading' hundreds of Google images to the local hard disk!
 
-Documentation
+This repo forked from:
+* https://github.com/Joeclinton1/google-images-download
+* https://github.com/hardikvasa/google-images-download
+
+## Documentation
 =============
 
-* `Documentation Homepage <https://google-images-download.readthedocs.io/en/latest/index.html>`__
-* `Installation <https://google-images-download.readthedocs.io/en/latest/installation.html>`__
-* `Input arguments <https://google-images-download.readthedocs.io/en/latest/arguments.html>`__
-* `Examples and Code Samples <https://google-images-download.readthedocs.io/en/latest/examples.html#>`__
+* [Breakdance](https://breakdance.github.io/breakdance/) - HTML
+* [Documentation Homepage]( <https://google-images-download.readthedocs.io/en/latest/index.html>)
+* [Installation](<https://google-images-download.readthedocs.io/en/latest/installation.html>)
+* [Input arguments](<https://google-images-download.readthedocs.io/en/latest/arguments.html>)
+* [Examples and Code Samples](<https://google-images-download.readthedocs.io/en/latest/examples.html#>)
 
 
-Disclaimer
-==========
+## Disclaimer
+=============
 
 This program lets you download tons of images from Google.
 Please do not download or use any image that violates its copyright terms.
@@ -27,3 +32,6 @@ You may not reproduce copyright images without their owner'self permission,
 except in "fair use" cases,
 or you could risk running into lawyer'self warnings, cease-and-desist letters, and copyright suits.
 Please be very careful before its usage! Use this script/code only for educational purposes.
+
+Bug fix:
+* ['NoneType' object is not subscriptable error #373](https://github.com/hardikvasa/google-images-download/issues/373)
