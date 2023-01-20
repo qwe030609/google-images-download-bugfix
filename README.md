@@ -1,5 +1,4 @@
 # Google Images Download
-==============
 
 Python Script for 'searching' and 'downloading' hundreds of Google images to the local hard disk!
 
@@ -8,7 +7,6 @@ This repo forked from:
 * https://github.com/hardikvasa/google-images-download
 
 ## Documentation
-=============
 
 * [Documentation Homepage]( <https://google-images-download.readthedocs.io/en/latest/index.html>)
 * [Installation](<https://google-images-download.readthedocs.io/en/latest/installation.html>)
@@ -17,7 +15,6 @@ This repo forked from:
 
 
 ## Disclaimer
-=============
 
 This program lets you download tons of images from Google.
 Please do not download or use any image that violates its copyright terms.
@@ -32,5 +29,6 @@ except in "fair use" cases,
 or you could risk running into lawyer'self warnings, cease-and-desist letters, and copyright suits.
 Please be very careful before its usage! Use this script/code only for educational purposes.
 
-Bug fix:
+## Bug fix:
+
 * ['NoneType' object is not subscriptable error #373](https://github.com/hardikvasa/google-images-download/issues/373)
