@@ -398,22 +398,39 @@ class googleimagesdownload:
                     page = page[end_content:]
         return tabs
 
+    def lookupJsonKey(self, object, s):
+        def lookupImpl(object, s):
+            isDict = False
+            if isinstance(object, dict):
+                isDict = True
+            elif not isinstance(object, list):
+                return None
+            for val in object:
+                if isDict:
+                    if val == s:
+                        return object[val]
+
+                obj = object[val] if isDict else val
+                ret = lookupImpl(obj, s)
+                if ret != None:
+                    return ret
+            return None
+        return lookupImpl(object, s)
+
     # Format the object in readable format
     def format_object(self, object):
         data = object[1]
         main = data[3]
-        info = data[23]
-        if info is None:
-            info = data[22]
+        info = self.lookupJsonKey(data, '2003')
         formatted_object = {}
         try:
             formatted_object['image_height'] = main[2]
             formatted_object['image_width'] = main[1]
             formatted_object['image_link'] = main[0]
             formatted_object['image_format'] = main[0][-1 * (len(main[0]) - main[0].rfind(".") - 1):]
-            formatted_object['image_description'] = info['2003'][3]
-            formatted_object['image_host'] = info['2003'][17]
-            formatted_object['image_source'] = info['2003'][2]
+            formatted_object['image_description'] = info[3]
+            formatted_object['image_host'] = info[17]
+            formatted_object['image_source'] = info[2]
             formatted_object['image_thumbnail_url'] = data[2][0]
         except Exception as e:
             print(e)
